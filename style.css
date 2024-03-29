@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(77, 77, 75);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    font-size: 3rem;
+    border: 2px solid black;
+    background-color: rgb(19, 19, 16);
+    color: aliceblue;
+    display: block;
+}
+
+.front{
+    height: 550px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.piano{
+    margin-top: 10vh;
+    display:flex;
+    justify-content: center;
+    height: 250px;    
+}
+.white{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 50px 5px black;
+}
+.black{
+    position: absolute;
+    display: flex;
+    width: 450px;
+    justify-content: left;
+}
+
+.white-keys{
+    width: 70px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px black inset;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 1.5rem;
+    color: black;
+}
+.white-keys:active{
+    box-shadow: 0px 0px 100px black inset;
+}
+
+.black-keys{
+    width: 50px;
+    height: 125px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(22, 19, 19);
+    margin-left: 20px;
+    top: 0;
+    box-shadow: -5px 0px 10px 5px black;
+    font-size: 1.5rem;
+}
+.black-keys:active{
+    box-shadow: -5px 0px 10px 0px black, .1px .1px 0px 0px whitesmoke inset;
+}
+
+.black-keys:nth-child(3){
+    margin-left: 100px;
+}
+
+
+@media only screen and (max-width:600px){
+    .piano{
+        translate: 0px 100px;
+        transform: rotate(90deg);     
+    }
+    .keys{
+        font-size: 0px;
+    }
+    button{
+        display: none;
+    }
+}
+
+button{
+    background-color: rgb(179, 194, 213);
+    height: 2.5rem;
+    width: 20vw;
+    font-size: 1rem;
+    box-shadow: 0px 1px 5px 1px white;
+    margin-top: 100px;
+}
+button:hover{
+    background-color: rgb(218, 180, 180);
+}
+button:active{
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+}
+
+.message {
+    color: white;
+
+}
+
+#iconcontainer {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.icons {
+    /* border: 2px solid red; */
+    float: left;
+    padding: 0;
+    margin: 1rem;
+}
+
+svg:hover {
+    filter: drop-shadow(1px 1px 10px rgb(240, 237, 237));
+}
+
+svg {
+    height: 50px;
+    width: auto;
+
+}
+
+#contact {
+    font-size: 2rem;
+    color: white;
+}
+
